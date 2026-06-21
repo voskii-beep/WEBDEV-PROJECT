@@ -16,6 +16,7 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text-color);
+  background-color: #f3f1ea;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -39,6 +40,15 @@ a {
 
 .text-success {
   color: var(--primary-color) !important;
+}
+
+/* Section backgrounds that blend with imagery */
+.bg-light {
+  background-color: #eef1e7 !important;
+}
+
+section {
+  background-color: transparent;
 }
 
 /* Dark Mode */
@@ -75,18 +85,24 @@ body.dark-mode .navbar {
 }
 
 .slide-forest {
-  background: linear-gradient(rgba(0, 40, 10, 0.55), rgba(0, 40, 10, 0.55)),
-    url('https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1600&q=80');
+  background: linear-gradient(rgba(10, 35, 15, 0.5), rgba(10, 35, 15, 0.6)),
+    url('../images/hero-savanna.jpg');
 }
 
 .slide-mountain {
-  background: linear-gradient(rgba(0, 30, 20, 0.55), rgba(0, 30, 20, 0.55)),
-    url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1600&q=80');
+  background: linear-gradient(rgba(15, 30, 25, 0.5), rgba(15, 30, 25, 0.6)),
+    url('../images/hero-mountain.jpg');
 }
 
 .slide-river {
-  background: linear-gradient(rgba(0, 35, 15, 0.55), rgba(0, 35, 15, 0.55)),
-    url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=80');
+  background: linear-gradient(rgba(10, 30, 30, 0.5), rgba(10, 30, 30, 0.6)),
+    url('../images/hero-coast.jpg');
+}
+
+/* Card images */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
 }
 
 /* Cards */
@@ -111,7 +127,7 @@ body.dark-mode .navbar {
   font-size: 14px;
 }
 
-
+/* Fade-in animation */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
