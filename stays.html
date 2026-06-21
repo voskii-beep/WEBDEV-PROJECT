@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="GreenTrails - Eco-Accommodations" />
+  <meta name="description" content="GreenTrails - Eco-Accommodations in Kenya" />
   <title>GreenTrails | Eco-Accommodations</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -38,7 +38,7 @@
   <section class="py-5 bg-light text-center">
     <div class="container">
       <h1 class="mb-2">Eco-Accommodations</h1>
-      <p class="lead mb-0">Stay green with our handpicked hotels, lodges, and campsites</p>
+      <p class="lead mb-0">Stay green with handpicked hotels, lodges, and campsites across Kenya</p>
     </div>
   </section>
 
@@ -60,9 +60,9 @@
         <div class="col-md-3">
           <select id="priceFilter" class="form-select">
             <option value="all">All Prices</option>
-            <option value="budget">Budget ($)</option>
-            <option value="mid">Mid-Range ($$)</option>
-            <option value="premium">Premium ($$$)</option>
+            <option value="budget">Below KSh 50,000</option>
+            <option value="mid">KSh 50,000 - 100,000</option>
+            <option value="premium">Above KSh 100,000</option>
           </select>
         </div>
       </div>
@@ -74,62 +74,62 @@
     <div class="container">
       <div class="row g-4" id="stayGrid">
 
-        <div class="col-md-4 stay-card" data-type="lodge" data-price="mid" data-name="riverside bamboo lodge">
+        <div class="col-md-4 stay-card" data-type="lodge" data-price="premium" data-name="campi ya kanzi">
           <div class="card h-100 shadow-sm">
             <div class="card-body">
-              <h5 class="card-title">Riverside Bamboo Lodge</h5>
-              <p class="card-text text-muted small">Lodge &middot; Mid-Range ($$)</p>
-              <p class="card-text">Solar-powered cabins built from sustainably sourced bamboo, right on the riverbank.</p>
+              <h5 class="card-title">Campi ya Kanzi</h5>
+              <p class="card-text text-muted small">Kuku Group Ranch, Chyulu Hills &middot; Lodge &middot; Above KSh 100,000/night</p>
+              <p class="card-text">A solar-powered eco-lodge in the Chyulu Hills run in partnership with the local Maasai community, supporting wildlife conservation across the ranch.</p>
             </div>
           </div>
         </div>
 
-        <div class="col-md-4 stay-card" data-type="hotel" data-price="premium" data-name="canopy view eco hotel">
+        <div class="col-md-4 stay-card" data-type="lodge" data-price="mid" data-name="ol donyo lodge">
           <div class="card h-100 shadow-sm">
             <div class="card-body">
-              <h5 class="card-title">Canopy View Eco Hotel</h5>
-              <p class="card-text text-muted small">Hotel &middot; Premium ($$$)</p>
-              <p class="card-text">A LEED-certified hotel with rainwater harvesting and an on-site organic farm.</p>
+              <h5 class="card-title">ol Donyo Lodge</h5>
+              <p class="card-text text-muted small">Mbirikani Group Ranch, Amboseli &middot; Lodge &middot; KSh 50,000 - 100,000/night</p>
+              <p class="card-text">Set on the slopes overlooking Amboseli, this lodge channels conservation fees directly into community-run wildlife protection programs.</p>
             </div>
           </div>
         </div>
 
-        <div class="col-md-4 stay-card" data-type="campsite" data-price="budget" data-name="quiet pines campsite">
+        <div class="col-md-4 stay-card" data-type="campsite" data-price="budget" data-name="masai mara public campsite">
           <div class="card h-100 shadow-sm">
             <div class="card-body">
-              <h5 class="card-title">Quiet Pines Campsite</h5>
-              <p class="card-text text-muted small">Campsite &middot; Budget ($)</p>
-              <p class="card-text">A leave-no-trace campsite with composting facilities and solar charging stations.</p>
+              <h5 class="card-title">Masai Mara Public Campsite</h5>
+              <p class="card-text text-muted small">Talek Gate, Masai Mara &middot; Campsite &middot; Below KSh 50,000/night</p>
+              <p class="card-text">A simple, low-impact campsite near Talek Gate with solar lighting and composting toilets, ideal for budget-conscious overland travelers.</p>
             </div>
           </div>
         </div>
 
-        <div class="col-md-4 stay-card" data-type="lodge" data-price="premium" data-name="highland mist eco lodge">
+        <div class="col-md-4 stay-card" data-type="hotel" data-price="mid" data-name="sarova mara game camp">
           <div class="card h-100 shadow-sm">
             <div class="card-body">
-              <h5 class="card-title">Highland Mist Eco Lodge</h5>
-              <p class="card-text text-muted small">Lodge &middot; Premium ($$$)</p>
-              <p class="card-text">Off-grid suites powered entirely by wind and solar, with guided wildlife walks included.</p>
+              <h5 class="card-title">Sarova Mara Game Camp</h5>
+              <p class="card-text text-muted small">Masai Mara National Reserve &middot; Hotel &middot; KSh 50,000 - 100,000/night</p>
+              <p class="card-text">A tented camp inside the reserve with greywater recycling systems and a partnership programme supporting local Maasai schools.</p>
             </div>
           </div>
         </div>
 
-        <div class="col-md-4 stay-card" data-type="hotel" data-price="budget" data-name="green nest budget inn">
+        <div class="col-md-4 stay-card" data-type="hotel" data-price="budget" data-name="rondo retreat">
           <div class="card h-100 shadow-sm">
             <div class="card-body">
-              <h5 class="card-title">Green Nest Budget Inn</h5>
-              <p class="card-text text-muted small">Hotel &middot; Budget ($)</p>
-              <p class="card-text">An affordable stay with a strict zero-plastic policy and locally sourced breakfast.</p>
+              <h5 class="card-title">Rondo Retreat</h5>
+              <p class="card-text text-muted small">Kakamega Forest &middot; Hotel &middot; Below KSh 50,000/night</p>
+              <p class="card-text">A colonial-era guesthouse inside Kakamega Forest, Kenya's last remaining tropical rainforest, with proceeds supporting forest conservation.</p>
             </div>
           </div>
         </div>
 
-        <div class="col-md-4 stay-card" data-type="campsite" data-price="mid" data-name="lakeside glamping grounds">
+        <div class="col-md-4 stay-card" data-type="campsite" data-price="mid" data-name="elsa's kopje campsite">
           <div class="card h-100 shadow-sm">
             <div class="card-body">
-              <h5 class="card-title">Lakeside Glamping Grounds</h5>
-              <p class="card-text text-muted small">Campsite &middot; Mid-Range ($$)</p>
-              <p class="card-text">Furnished safari tents on the lake shore, powered by a community micro-grid.</p>
+              <h5 class="card-title">Elsa's Kopje Campsite</h5>
+              <p class="card-text text-muted small">Meru National Park &middot; Campsite &middot; KSh 50,000 - 100,000/night</p>
+              <p class="card-text">A hilltop campsite built into volcanic rock formations, with rainwater harvesting and a strict no-single-use-plastic policy.</p>
             </div>
           </div>
         </div>
