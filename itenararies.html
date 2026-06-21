@@ -3,27 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EduTrack | Grades</title>
+  <meta name="description" content="GreenTrails - Eco-Travel Itineraries in Kenya" />
+  <title>GreenTrails | Itineraries</title>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
+  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">EduTrack</a>
+      <a class="navbar-brand fw-bold" href="index.html">GreenTrails</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="students.html">Students</a></li>
-          <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
-          <li class="nav-item"><a class="nav-link active" href="grades.html">Grades</a></li>
-          <li class="nav-item"><a class="nav-link" href="announcements.html">Announcements</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="stays.html">Eco-Accommodations</a></li>
+          <li class="nav-item"><a class="nav-link active" href="itineraries.html">Itineraries</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Travel Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact & Booking</a></li>
           <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
         </ul>
         <button class="btn btn-outline-light ms-3" id="darkModeToggle">Dark Mode</button>
@@ -31,25 +34,183 @@
     </div>
   </nav>
 
-  <main class="container py-5">
-    <h1 class="mb-4">Grades & Results</h1>
-    <p>Content coming soon.</p>
-  </main>
+  <!-- PAGE HEADER -->
+  <section class="py-5 bg-light text-center">
+    <div class="container">
+      <h1 class="mb-2">Travel Itineraries</h1>
+      <p class="lead mb-0">Ready-made day-by-day plans for a more sustainable adventure</p>
+    </div>
+  </section>
 
+  <!-- ITINERARY 1: MASAI MARA -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="mb-2">3-Day Masai Mara Eco-Safari</h2>
+      <p class="text-muted mb-4">A low-impact safari experience focused on community conservancies rather than crowded reserve routes.</p>
+
+      <div class="accordion" id="maraAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#maraDay1">
+              Day 1 — Arrival & Conservancy Game Drive
+            </button>
+          </h2>
+          <div id="maraDay1" class="accordion-collapse collapse show" data-bs-parent="#maraAccordion">
+            <div class="accordion-body">
+              Arrive at Ol Kinyei Conservancy and check in at a community-run eco-camp. In the afternoon, take a low-vehicle-density game drive guided by a local Maasai ranger, with proceeds supporting conservancy land lease payments to local landowners.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#maraDay2">
+              Day 2 — Walking Safari & Cultural Visit
+            </button>
+          </h2>
+          <div id="maraDay2" class="accordion-collapse collapse" data-bs-parent="#maraAccordion">
+            <div class="accordion-body">
+              Morning guided walking safari to track wildlife on foot with minimal disturbance. In the afternoon, visit a local Maasai village for a cultural exchange that directly supports the homestead through a fair-trade visitor fee.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#maraDay3">
+              Day 3 — Sunrise Drive & Departure
+            </button>
+          </h2>
+          <div id="maraDay3" class="accordion-collapse collapse" data-bs-parent="#maraAccordion">
+            <div class="accordion-body">
+              An early sunrise game drive followed by breakfast at camp. Check out and depart, with an optional stop at a local women's beadwork cooperative on the way out.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ITINERARY 2: AMBOSELI & CHYULU HILLS -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-2">4-Day Amboseli & Chyulu Hills Trail</h2>
+      <p class="text-muted mb-4">Combine elephant viewing beneath Kilimanjaro with highland forest hikes in the Chyulu Hills.</p>
+
+      <div class="accordion" id="amboseliAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#amboDay1">
+              Day 1 — Arrival in Amboseli
+            </button>
+          </h2>
+          <div id="amboDay1" class="accordion-collapse collapse show" data-bs-parent="#amboseliAccordion">
+            <div class="accordion-body">
+              Arrive at Amboseli National Park and settle into a solar-powered tented camp. Evening game drive with views of Mount Kilimanjaro and resident elephant herds.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#amboDay2">
+              Day 2 — Full Day in Amboseli
+            </button>
+          </h2>
+          <div id="amboDay2" class="accordion-collapse collapse" data-bs-parent="#amboseliAccordion">
+            <div class="accordion-body">
+              Full-day game drive across the park's swamps and plains, followed by a visit to the Amboseli Elephant Research Centre to learn about long-term conservation tracking.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#amboDay3">
+              Day 3 — Transfer to Chyulu Hills
+            </button>
+          </h2>
+          <div id="amboDay3" class="accordion-collapse collapse" data-bs-parent="#amboseliAccordion">
+            <div class="accordion-body">
+              Morning transfer to the Chyulu Hills. Afternoon guided hike through volcanic highland forest with views over the rift valley, staying at a community-partnered lodge.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#amboDay4">
+              Day 4 — Caves & Departure
+            </button>
+          </h2>
+          <div id="amboDay4" class="accordion-collapse collapse" data-bs-parent="#amboseliAccordion">
+            <div class="accordion-body">
+              Visit the Leviathan lava tube caves with a local guide before departing in the early afternoon.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ITINERARY 3: COAST -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="mb-2">3-Day Watamu & Diani Coastal Escape</h2>
+      <p class="text-muted mb-4">A marine-focused trip combining reef conservation with mangrove restoration walks.</p>
+
+      <div class="accordion" id="coastAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#coastDay1">
+              Day 1 — Watamu Marine Park
+            </button>
+          </h2>
+          <div id="coastDay1" class="accordion-collapse collapse show" data-bs-parent="#coastAccordion">
+            <div class="accordion-body">
+              Arrive in Watamu and join a guided snorkeling trip through the marine park's protected coral reef, run by a local conservation cooperative.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#coastDay2">
+              Day 2 — Turtle Watch & Mangrove Walk
+            </button>
+          </h2>
+          <div id="coastDay2" class="accordion-collapse collapse" data-bs-parent="#coastAccordion">
+            <div class="accordion-body">
+              Visit a sea turtle rescue and release programme in the morning. In the afternoon, walk the Mida Creek mangrove boardwalk with a community ranger explaining restoration efforts.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#coastDay3">
+              Day 3 — Diani Beach Boardwalk & Departure
+            </button>
+          </h2>
+          <div id="coastDay3" class="accordion-collapse collapse" data-bs-parent="#coastAccordion">
+            <div class="accordion-body">
+              Transfer to Diani Beach for a final morning walk along the mangrove boardwalk before departure.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer class="bg-dark text-white text-center py-4">
     <div class="container">
-      <p class="mb-1">EduTrack Student Management System</p>
+      <p class="mb-1">GreenTrails - Eco-Tourism & Travel Guide</p>
       <p class="mb-0 text-muted small">
         <a href="index.html" class="text-muted me-2">Home</a>
         <a href="about.html" class="text-muted me-2">About</a>
         <a href="contact.html" class="text-muted me-2">Contact</a>
         <a href="faq.html" class="text-muted">FAQ</a>
       </p>
-      <p class="mt-2 mb-0 text-muted small">&copy; 2026 EduTrack. All rights reserved.</p>
+      <p class="mt-2 mb-0 text-muted small">&copy; 2026 GreenTrails. All rights reserved.</p>
     </div>
   </footer>
 
-  <button id="scrollTopBtn" class="btn btn-primary" title="Back to top">Top</button>
+  <button id="scrollTopBtn" class="btn btn-success" title="Back to top">Top</button>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
