@@ -3,27 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EduTrack | Courses</title>
+  <meta name="description" content="GreenTrails - Eco-Accommodations" />
+  <title>GreenTrails | Eco-Accommodations</title>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
+  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">EduTrack</a>
+      <a class="navbar-brand fw-bold" href="index.html">GreenTrails</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="students.html">Students</a></li>
-          <li class="nav-item"><a class="nav-link active" href="courses.html">Courses</a></li>
-          <li class="nav-item"><a class="nav-link" href="grades.html">Grades</a></li>
-          <li class="nav-item"><a class="nav-link" href="announcements.html">Announcements</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link active" href="stays.html">Eco-Accommodations</a></li>
+          <li class="nav-item"><a class="nav-link" href="itineraries.html">Itineraries</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Travel Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact & Booking</a></li>
           <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
         </ul>
         <button class="btn btn-outline-light ms-3" id="darkModeToggle">Dark Mode</button>
@@ -31,25 +34,128 @@
     </div>
   </nav>
 
-  <main class="container py-5">
-    <h1 class="mb-4">Courses</h1>
-    <p>Content coming soon.</p>
-  </main>
+  <!-- PAGE HEADER -->
+  <section class="py-5 bg-light text-center">
+    <div class="container">
+      <h1 class="mb-2">Eco-Accommodations</h1>
+      <p class="lead mb-0">Stay green with our handpicked hotels, lodges, and campsites</p>
+    </div>
+  </section>
 
+  <!-- SEARCH + FILTER -->
+  <section class="py-4 border-bottom">
+    <div class="container">
+      <div class="row g-3 align-items-center">
+        <div class="col-md-5">
+          <input type="text" id="staySearch" class="form-control" placeholder="Search accommodations by name...">
+        </div>
+        <div class="col-md-4">
+          <div class="btn-group flex-wrap" role="group" id="typeFilter">
+            <button type="button" class="btn btn-outline-success active" data-type="all">All Types</button>
+            <button type="button" class="btn btn-outline-success" data-type="hotel">Hotel</button>
+            <button type="button" class="btn btn-outline-success" data-type="lodge">Lodge</button>
+            <button type="button" class="btn btn-outline-success" data-type="campsite">Campsite</button>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <select id="priceFilter" class="form-select">
+            <option value="all">All Prices</option>
+            <option value="budget">Budget ($)</option>
+            <option value="mid">Mid-Range ($$)</option>
+            <option value="premium">Premium ($$$)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAYS GRID -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4" id="stayGrid">
+
+        <div class="col-md-4 stay-card" data-type="lodge" data-price="mid" data-name="riverside bamboo lodge">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Riverside Bamboo Lodge</h5>
+              <p class="card-text text-muted small">Lodge &middot; Mid-Range ($$)</p>
+              <p class="card-text">Solar-powered cabins built from sustainably sourced bamboo, right on the riverbank.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 stay-card" data-type="hotel" data-price="premium" data-name="canopy view eco hotel">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Canopy View Eco Hotel</h5>
+              <p class="card-text text-muted small">Hotel &middot; Premium ($$$)</p>
+              <p class="card-text">A LEED-certified hotel with rainwater harvesting and an on-site organic farm.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 stay-card" data-type="campsite" data-price="budget" data-name="quiet pines campsite">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Quiet Pines Campsite</h5>
+              <p class="card-text text-muted small">Campsite &middot; Budget ($)</p>
+              <p class="card-text">A leave-no-trace campsite with composting facilities and solar charging stations.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 stay-card" data-type="lodge" data-price="premium" data-name="highland mist eco lodge">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Highland Mist Eco Lodge</h5>
+              <p class="card-text text-muted small">Lodge &middot; Premium ($$$)</p>
+              <p class="card-text">Off-grid suites powered entirely by wind and solar, with guided wildlife walks included.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 stay-card" data-type="hotel" data-price="budget" data-name="green nest budget inn">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Green Nest Budget Inn</h5>
+              <p class="card-text text-muted small">Hotel &middot; Budget ($)</p>
+              <p class="card-text">An affordable stay with a strict zero-plastic policy and locally sourced breakfast.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 stay-card" data-type="campsite" data-price="mid" data-name="lakeside glamping grounds">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Lakeside Glamping Grounds</h5>
+              <p class="card-text text-muted small">Campsite &middot; Mid-Range ($$)</p>
+              <p class="card-text">Furnished safari tents on the lake shore, powered by a community micro-grid.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="text-center text-muted mt-4 d-none" id="noStayResultsMsg">No accommodations match your search.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer class="bg-dark text-white text-center py-4">
     <div class="container">
-      <p class="mb-1">EduTrack Student Management System</p>
+      <p class="mb-1">GreenTrails - Eco-Tourism & Travel Guide</p>
       <p class="mb-0 text-muted small">
         <a href="index.html" class="text-muted me-2">Home</a>
         <a href="about.html" class="text-muted me-2">About</a>
         <a href="contact.html" class="text-muted me-2">Contact</a>
         <a href="faq.html" class="text-muted">FAQ</a>
       </p>
-      <p class="mt-2 mb-0 text-muted small">&copy; 2026 EduTrack. All rights reserved.</p>
+      <p class="mt-2 mb-0 text-muted small">&copy; 2026 GreenTrails. All rights reserved.</p>
     </div>
   </footer>
 
-  <button id="scrollTopBtn" class="btn btn-primary" title="Back to top">Top</button>
+  <button id="scrollTopBtn" class="btn btn-success" title="Back to top">Top</button>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
