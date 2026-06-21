@@ -1,13 +1,12 @@
-# WEBDEV-PROJECT
-# EduTrack - Student Management System
+# GreenTrails - Local Eco-Tourism & Travel Guide
 
-A school management website built with HTML, CSS, JavaScript, and Bootstrap 5.
+A regional travel website built with HTML, CSS, JavaScript, and Bootstrap 5. It promotes eco-friendly tourism, local businesses, and sustainable travel.
 
 ---
 
 ## About This Project
 
-This is a web application for managing students, courses, grades, and school announcements. It was built as a front-end development assignment.
+GreenTrails helps travelers find eco-friendly destinations, green accommodations, and ready-made itineraries. It also features a travel blog with sustainable travel tips. Built as a front-end development assignment.
 
 - **Built with:** HTML5, CSS3, JavaScript, Bootstrap 5
 - **Pages:** 8 pages
@@ -20,59 +19,24 @@ This is a web application for managing students, courses, grades, and school ann
 
 | Page | What it does |
 |---|---|
-| Home | Welcome page with quick links and school stats |
-| About | Info about the school and the team |
-| Students | Student directory with a search feature |
-| Courses | List of all courses with a filter feature |
-| Grades | Student grades and results table |
-| Announcements | School news and updates |
-| Contact | Contact form with validation |
+| Home | Hero carousel, intro section, and quick links |
+| Destinations | Grid of local eco-friendly travel spots |
+| Eco-Accommodations | Directory of green hotels and campsites |
+| Itineraries | Day-by-day travel plans |
+| Travel Blog | Articles on sustainable packing and wildlife |
+| About Us | Team, mission, and core values |
+| Contact & Booking | Form for inquiries and tour bookings |
 | FAQ | Common questions and answers |
 
 ---
 
 ## Features
 
-- Search students by name (live filter)
-- Filter courses by department
-- Contact form with error checking
+- Search and filter destinations or stays by region, type, or price
+- Booking form with real-time validation
 - Dark mode / Light mode toggle
 - Works on mobile, tablet, and desktop
 
 ---
 
 ## Folder Structure
-
-```
-WEBDEV-PROJECT/
-├── index.html
-├── about.html
-├── students.html
-├── courses.html
-├── grades.html
-├── announcements.html
-├── contact.html
-├── faq.html
-├── css/
-│   └── style.css
-├── js/
-│   └── main.js
-└── images/
-```
-
----
-
-## Live Site
-
-https://voskii-beep.github.io/WEBDEV-PROJECT
-
-*(Update this link after deploying to GitHub Pages)*
-
----
-
-## Author
-
-- **Name:** Your Full Name
-- **Student ID:** XXXXXXXX
-- **Course:** Web Application Development
-- **Submitted:** 28 June 2026
