@@ -215,3 +215,110 @@ function filterBlogPosts() {
 if (blogSearch) {
   blogSearch.addEventListener('input', filterBlogPosts);
 }
+// ===========================
+//  CONTACT & BOOKING PAGE
+//  Form Validation
+// ===========================
+
+const bookingForm = document.getElementById('bookingForm');
+const formSuccessAlert = document.getElementById('formSuccessAlert');
+
+function showError(input, errorId) {
+  input.classList.add('is-invalid');
+  document.getElementById(errorId).style.display = 'block';
+}
+
+function clearError(input, errorId) {
+  input.classList.remove('is-invalid');
+  input.classList.add('is-valid');
+  document.getElementById(errorId).style.display = 'none';
+}
+
+function validateBookingForm() {
+  let isValid = true;
+
+  const fullName = document.getElementById('fullName');
+  const email = document.getElementById('email');
+  const phone = document.getElementById('phone');
+  const inquiryType = document.getElementById('inquiryType');
+  const message = document.getElementById('message');
+
+  // Full Name: required, at least 2 characters
+  if (fullName.value.trim().length < 2) {
+    showError(fullName, 'fullNameError');
+    isValid = false;
+  } else {
+    clearError(fullName, 'fullNameError');
+  }
+
+  // Email: required, valid format
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(email.value.trim())) {
+    showError(email, 'emailError');
+    isValid = false;
+  } else {
+    clearError(email, 'emailError');
+  }
+
+  // Phone: required, at least 7 digits
+  const phoneDigits = phone.value.replace(/\D/g, '');
+  if (phoneDigits.length < 7) {
+    showError(phone, 'phoneError');
+    isValid = false;
+  } else {
+    clearError(phone, 'phoneError');
+  }
+
+  // Inquiry Type: required
+  if (inquiryType.value === '') {
+    showError(inquiryType, 'inquiryTypeError');
+    isValid = false;
+  } else {
+    clearError(inquiryType, 'inquiryTypeError');
+  }
+
+  // Message: required, at least 10 characters
+  if (message.value.trim().length < 10) {
+    showError(message, 'messageError');
+    isValid = false;
+  } else {
+    clearError(message, 'messageError');
+  }
+
+  return isValid;
+}
+
+if (bookingForm) {
+  bookingForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const valid = validateBookingForm();
+
+    if (valid) {
+      formSuccessAlert.classList.remove('d-none');
+      bookingForm.reset();
+
+      // Remove valid-state styling after reset
+      bookingForm.querySelectorAll('.is-valid').forEach(el => el.classList.remove('is-valid'));
+
+      // Scroll to success message
+      formSuccessAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+      // Hide success message after 6 seconds
+      setTimeout(() => {
+        formSuccessAlert.classList.add('d-none');
+      }, 6000);
+    } else {
+      formSuccessAlert.classList.add('d-none');
+    }
+  });
+
+  // Real-time validation as user types/selects
+  ['fullName', 'email', 'phone', 'inquiryType', 'message'].forEach(id => {
+    const field = document.getElementById(id);
+    if (field) {
+      field.addEventListener('input', validateBookingForm);
+      field.addEventListener('change', validateBookingForm);
+    }
+  });
+}
