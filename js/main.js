@@ -183,3 +183,35 @@ if (typeFilter) {
 if (priceFilter) {
   priceFilter.addEventListener('change', filterStays);
 }
+// ===========================
+//  TRAVEL BLOG PAGE
+//  Live Search by Title
+// ===========================
+
+const blogSearch = document.getElementById('blogSearch');
+const blogCards = document.querySelectorAll('.blog-card');
+const noBlogResultsMsg = document.getElementById('noBlogResultsMsg');
+
+function filterBlogPosts() {
+  const searchTerm = blogSearch.value.trim().toLowerCase();
+  let visibleCount = 0;
+
+  blogCards.forEach(card => {
+    const title = card.getAttribute('data-title');
+
+    if (title.includes(searchTerm)) {
+      card.style.display = '';
+      visibleCount++;
+    } else {
+      card.style.display = 'none';
+    }
+  });
+
+  if (noBlogResultsMsg) {
+    noBlogResultsMsg.classList.toggle('d-none', visibleCount !== 0);
+  }
+}
+
+if (blogSearch) {
+  blogSearch.addEventListener('input', filterBlogPosts);
+}
