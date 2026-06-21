@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="EduTrack - Student Management System" />
-  <title>EduTrack | Home</title>
+  <meta name="description" content="GreenTrails - Local Eco-Tourism & Travel Guide" />
+  <title>GreenTrails | Home</title>
 
   <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -16,19 +16,19 @@
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">EduTrack</a>
+      <a class="navbar-brand fw-bold" href="index.html">GreenTrails</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="students.html">Students</a></li>
-          <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
-          <li class="nav-item"><a class="nav-link" href="grades.html">Grades</a></li>
-          <li class="nav-item"><a class="nav-link" href="announcements.html">Announcements</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="stays.html">Eco-Accommodations</a></li>
+          <li class="nav-item"><a class="nav-link" href="itineraries.html">Itineraries</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Travel Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact & Booking</a></li>
           <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
         </ul>
         <button class="btn btn-outline-light ms-3" id="darkModeToggle">Dark Mode</button>
@@ -36,73 +36,93 @@
     </div>
   </nav>
 
-  <!-- HERO SECTION -->
-  <section class="hero-section text-center text-white">
-    <div class="container">
-      <h1 class="display-4 fw-bold">Welcome to EduTrack</h1>
-      <p class="lead">A simple and effective student management system for schools and institutions.</p>
-      <a href="students.html" class="btn btn-primary btn-lg me-2">View Students</a>
-      <a href="courses.html" class="btn btn-outline-light btn-lg">Browse Courses</a>
+  <!-- HERO CAROUSEL -->
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
     </div>
-  </section>
-
-  <!-- STATS SECTION -->
-  <section class="py-5 bg-light">
-    <div class="container text-center">
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card p-4 shadow-sm">
-            <h2 class="fw-bold text-primary">120</h2>
-            <p class="mb-0">Total Students</p>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="carousel-slide slide-forest d-flex align-items-center justify-content-center text-center text-white">
+          <div>
+            <h1 class="display-4 fw-bold">Explore Nature Responsibly</h1>
+            <p class="lead">Discover eco-friendly destinations across the region</p>
+            <a href="destinations.html" class="btn btn-light btn-lg">View Destinations</a>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card p-4 shadow-sm">
-            <h2 class="fw-bold text-primary">15</h2>
-            <p class="mb-0">Courses Available</p>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-slide slide-mountain d-flex align-items-center justify-content-center text-center text-white">
+          <div>
+            <h1 class="display-4 fw-bold">Stay Green, Travel Far</h1>
+            <p class="lead">Browse our handpicked eco-accommodations</p>
+            <a href="stays.html" class="btn btn-light btn-lg">View Stays</a>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card p-4 shadow-sm">
-            <h2 class="fw-bold text-primary">8</h2>
-            <p class="mb-0">Departments</p>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-slide slide-river d-flex align-items-center justify-content-center text-center text-white">
+          <div>
+            <h1 class="display-4 fw-bold">Plan Your Perfect Trip</h1>
+            <p class="lead">Ready-made itineraries for every kind of traveler</p>
+            <a href="itineraries.html" class="btn btn-light btn-lg">View Itineraries</a>
           </div>
         </div>
       </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- INTRO SECTION -->
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-3">Welcome to GreenTrails</h2>
+      <p class="lead mb-0">
+        GreenTrails connects travelers with sustainable destinations, eco-conscious stays, and
+        local experiences that protect the places we love to visit. Every trip you plan here
+        supports local communities and responsible tourism.
+      </p>
+    </div>
   </section>
 
-  <!-- QUICK LINKS SECTION -->
+  <!-- QUICK ACCESS CARDS -->
   <section class="py-5">
     <div class="container">
-      <h2 class="text-center mb-4">Quick Access</h2>
+      <h2 class="text-center mb-4">Start Exploring</h2>
       <div class="row g-4">
         <div class="col-md-3">
           <div class="card text-center p-3 h-100 shadow-sm">
-            <h5 class="fw-bold">Students</h5>
-            <p>View and search the full student directory.</p>
-            <a href="students.html" class="btn btn-sm btn-primary">Go</a>
+            <h5 class="fw-bold">Destinations</h5>
+            <p>Browse eco-friendly travel spots near you.</p>
+            <a href="destinations.html" class="btn btn-sm btn-success">Explore</a>
           </div>
         </div>
         <div class="col-md-3">
           <div class="card text-center p-3 h-100 shadow-sm">
-            <h5 class="fw-bold">Courses</h5>
-            <p>Browse all available courses by department.</p>
-            <a href="courses.html" class="btn btn-sm btn-primary">Go</a>
+            <h5 class="fw-bold">Eco-Stays</h5>
+            <p>Find green hotels and campsites.</p>
+            <a href="stays.html" class="btn btn-sm btn-success">Explore</a>
           </div>
         </div>
         <div class="col-md-3">
           <div class="card text-center p-3 h-100 shadow-sm">
-            <h5 class="fw-bold">Grades</h5>
-            <p>Check student grades and performance results.</p>
-            <a href="grades.html" class="btn btn-sm btn-primary">Go</a>
+            <h5 class="fw-bold">Itineraries</h5>
+            <p>Ready-made day-by-day travel plans.</p>
+            <a href="itineraries.html" class="btn btn-sm btn-success">Explore</a>
           </div>
         </div>
         <div class="col-md-3">
           <div class="card text-center p-3 h-100 shadow-sm">
-            <h5 class="fw-bold">Announcements</h5>
-            <p>Stay updated with the latest school news.</p>
-            <a href="announcements.html" class="btn btn-sm btn-primary">Go</a>
+            <h5 class="fw-bold">Travel Blog</h5>
+            <p>Tips on sustainable packing and wildlife.</p>
+            <a href="blog.html" class="btn btn-sm btn-success">Explore</a>
           </div>
         </div>
       </div>
@@ -112,23 +132,20 @@
   <!-- FOOTER -->
   <footer class="bg-dark text-white text-center py-4">
     <div class="container">
-      <p class="mb-1">EduTrack Student Management System</p>
+      <p class="mb-1">GreenTrails - Eco-Tourism & Travel Guide</p>
       <p class="mb-0 text-muted small">
         <a href="index.html" class="text-muted me-2">Home</a>
         <a href="about.html" class="text-muted me-2">About</a>
         <a href="contact.html" class="text-muted me-2">Contact</a>
         <a href="faq.html" class="text-muted">FAQ</a>
       </p>
-      <p class="mt-2 mb-0 text-muted small">&copy; 2026 EduTrack. All rights reserved.</p>
+      <p class="mt-2 mb-0 text-muted small">&copy; 2026 GreenTrails. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- Scroll to Top Button -->
-  <button id="scrollTopBtn" class="btn btn-primary" title="Back to top">Top</button>
+  <button id="scrollTopBtn" class="btn btn-success" title="Back to top">Top</button>
 
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Custom JS -->
   <script src="js/main.js"></script>
 </body>
 </html>
