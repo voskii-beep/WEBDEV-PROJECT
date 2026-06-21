@@ -1,0 +1,142 @@
+/* ===========================
+   GreenTrails - Custom Styles
+   =========================== */
+
+/* CSS Variables */
+:root {
+  --primary-color: #2e7d32;
+  --primary-light: #4caf50;
+  --dark-color: #1b1b1b;
+  --light-color: #f4f8f4;
+  --text-color: #2b2b2b;
+  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* General */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: var(--dark-color) !important;
+}
+
+.btn-success {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-success:hover {
+  background-color: var(--primary-light);
+  border-color: var(--primary-light);
+}
+
+.text-success {
+  color: var(--primary-color) !important;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  border-color: #333;
+  color: #e0e0e0;
+}
+
+body.dark-mode .bg-light {
+  background-color: #1a1a1a !important;
+}
+
+body.dark-mode footer {
+  background-color: #0a0a0a !important;
+}
+
+body.dark-mode .navbar {
+  background-color: #0a0a0a !important;
+}
+
+/* Hero Carousel */
+.carousel-slide {
+  height: 70vh;
+  min-height: 420px;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+
+.slide-forest {
+  background: linear-gradient(rgba(0, 40, 10, 0.55), rgba(0, 40, 10, 0.55)),
+    url('https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1600&q=80');
+}
+
+.slide-mountain {
+  background: linear-gradient(rgba(0, 30, 20, 0.55), rgba(0, 30, 20, 0.55)),
+    url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1600&q=80');
+}
+
+.slide-river {
+  background: linear-gradient(rgba(0, 35, 15, 0.55), rgba(0, 35, 15, 0.55)),
+    url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=80');
+}
+
+/* Cards */
+.card {
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* Scroll to Top Button */
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 14px;
+}
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Navbar active link */
+.navbar .nav-link.active {
+  font-weight: 600;
+  color: #ffffff !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .carousel-slide {
+    height: 55vh;
+    min-height: 320px;
+  }
+
+  .carousel-slide h1 {
+    font-size: 1.8rem;
+  }
+}
