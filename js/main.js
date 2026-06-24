@@ -1,7 +1,11 @@
 // ===========================
 //  GreenTrails - Main JavaScript
 // ===========================
-
+// --- Initialize Bootstrap Tooltips ---
+document.addEventListener('DOMContentLoaded', () => {
+  const tooltipElements = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+  tooltipElements.forEach(el => new bootstrap.Tooltip(el));
+});
 
 // --- Dark Mode Toggle ---
 const darkModeToggle = document.getElementById('darkModeToggle');
