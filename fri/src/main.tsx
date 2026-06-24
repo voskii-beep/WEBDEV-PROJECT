@@ -1,12 +1,7 @@
-import Greetings from './greetings.tsx'
-
-
 import { StrictMode } from 'react'
-
 import { createRoot } from 'react-dom/client'
-import  from 'react-dom/static'
-import './index.css'
-import App from './App.tsx'
+import App from './App'
+import 'bootstrap/dist/css/bootstrap.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
