@@ -146,6 +146,7 @@ body.dark-mode .navbar {
 }
 
 /* Responsive adjustments */
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .carousel-slide {
     height: 55vh;
@@ -154,5 +155,65 @@ body.dark-mode .navbar {
 
   .carousel-slide h1 {
     font-size: 1.8rem;
+  }
+
+  .carousel-slide p.lead {
+    font-size: 1rem;
+  }
+
+  .carousel-slide .btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .card-img-top {
+    height: 160px;
+  }
+
+  section {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+
+  #scrollTopBtn {
+    bottom: 15px;
+    right: 15px;
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-brand {
+    font-size: 1.1rem;
+  }
+
+  .carousel-slide h1 {
+    font-size: 1.4rem;
+  }
+
+  .carousel-slide p.lead {
+    font-size: 0.9rem;
+  }
+
+  .btn-group .btn {
+    font-size: 0.75rem;
+    padding: 4px 8px;
+  }
+
+  .card-img-top {
+    height: 140px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
   }
 }
