@@ -295,9 +295,8 @@ function validateBookingForm() {
 if (bookingForm) {
   bookingForm.addEventListener('submit', (e) => {
     e.preventDefault();
-
-    const valid = validateBookingForm();
-
+    try {
+      const valid = validateBookingForm();
     if (valid) {
       formSuccessAlert.classList.remove('d-none');
       bookingForm.reset();
@@ -312,8 +311,11 @@ if (bookingForm) {
       setTimeout(() => {
         formSuccessAlert.classList.add('d-none');
       }, 6000);
-    } else {
+ } else {
       formSuccessAlert.classList.add('d-none');
+    }
+    } catch (error) {
+      console.error('Form submission error:', error);
     }
   });
 
