@@ -217,3 +217,71 @@ body.dark-mode .navbar {
     font-size: 1.3rem;
   }
 }
+/* ===========================
+   Utility Classes
+   =========================== */
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 2rem;
+}
+
+.btn-green {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: background-color 0.2s;
+}
+
+.btn-green:hover {
+  background-color: var(--primary-light);
+  color: #ffffff;
+}
+
+.card-eco {
+  border-radius: 10px;
+  border: none;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.2s;
+}
+
+.card-eco:hover {
+  transform: translateY(-4px);
+}
+
+.text-eco {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.bg-eco-light {
+  background-color: #eef1e7;
+}
+
+.page-header {
+  padding: 60px 20px;
+  background-color: #eef1e7;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--dark-color);
+}
+
+.page-header p {
+  font-size: 1.1rem;
+  color: #6c757d;
+}
