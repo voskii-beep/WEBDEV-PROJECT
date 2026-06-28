@@ -146,7 +146,6 @@ body.dark-mode .navbar {
 }
 
 /* Responsive adjustments */
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .carousel-slide {
     height: 55vh;
@@ -156,132 +155,67 @@ body.dark-mode .navbar {
   .carousel-slide h1 {
     font-size: 1.8rem;
   }
-
-  .carousel-slide p.lead {
-    font-size: 1rem;
-  }
-
-  .carousel-slide .btn {
-    font-size: 0.9rem;
-    padding: 8px 16px;
-  }
-
-  .card-img-top {
-    height: 160px;
-  }
-
-  section {
-    padding-top: 2rem !important;
-    padding-bottom: 2rem !important;
-  }
-
-  footer p {
-    font-size: 0.8rem;
-  }
-
-  #scrollTopBtn {
-    bottom: 15px;
-    right: 15px;
-    padding: 6px 10px;
-    font-size: 12px;
-  }
 }
 
-@media (max-width: 480px) {
-  .navbar-brand {
-    font-size: 1.1rem;
-  }
-
-  .carousel-slide h1 {
-    font-size: 1.4rem;
-  }
-
-  .carousel-slide p.lead {
-    font-size: 0.9rem;
-  }
-
-  .btn-group .btn {
-    font-size: 0.75rem;
-    padding: 4px 8px;
-  }
-
-  .card-img-top {
-    height: 140px;
-  }
-
-  h1 {
-    font-size: 1.6rem;
-  }
-
-  h2 {
-    font-size: 1.3rem;
-  }
-}
 /* ===========================
-   Utility Classes
+   Homepage Extra Sections
    =========================== */
 
-.section-title {
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: var(--text-color);
-  margin-bottom: 1rem;
+/* Stats Section */
+.stats-section {
+  background: linear-gradient(135deg, #1b5e20, #2e7d32);
+  padding: 60px 20px;
 }
 
-.section-subtitle {
-  font-size: 1rem;
-  color: #6c757d;
-  margin-bottom: 2rem;
+/* Carousel text box */
+.carousel-text-box {
+  background: rgba(0, 0, 0, 0.35);
+  padding: 30px 40px;
+  border-radius: 12px;
 }
 
-.btn-green {
-  background-color: var(--primary-color);
-  color: #ffffff;
-  border: none;
-  padding: 10px 24px;
-  border-radius: 6px;
-  font-size: 0.95rem;
-  transition: background-color 0.2s;
+/* Featured destination cards */
+.destination-feature-card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.btn-green:hover {
-  background-color: var(--primary-light);
-  color: #ffffff;
+.destination-feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15) !important;
 }
 
-.card-eco {
-  border-radius: 10px;
-  border: none;
-  box-shadow: var(--card-shadow);
+/* Quick access cards */
+.quick-card {
+  border-radius: 12px;
   transition: transform 0.2s;
 }
 
-.card-eco:hover {
+.quick-card:hover {
   transform: translateY(-4px);
 }
 
-.text-eco {
-  color: var(--primary-color);
-  font-weight: 500;
-}
-
-.bg-eco-light {
-  background-color: #eef1e7;
-}
-
-.page-header {
-  padding: 60px 20px;
-  background-color: #eef1e7;
-  text-align: center;
-}
-
-.page-header h1 {
-  font-size: 2.2rem;
+.quick-icon {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.2rem;
   font-weight: 700;
-  color: var(--dark-color);
 }
 
-.page-header p {
-  font-size: 1.1rem;
-  color: #6c757d;
+/* Testimonials */
+.testimonials-section {
+  background-color: #f3f1ea;
+}
+
+.testimonial-card {
+  border-radius: 12px;
+  border-left: 4px solid #2e7d32 !important;
+}
+
+/* Call to Action */
+.cta-section {
+  background: linear-gradient(135deg, #2e7d32, #1b5e20);
+  padding: 80px 20px;
 }

@@ -19,10 +19,10 @@
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">GreenTrails</a>
+      <a class="navbar-brand fw-bold fs-4" href="index.html">GreenTrails</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation menu">
-  <span class="navbar-toggler-icon"></span>
-</button>
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
@@ -49,28 +49,31 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="carousel-slide slide-forest d-flex align-items-center justify-content-center text-center text-white">
-          <div>
+          <div class="carousel-text-box">
             <h1 class="display-4 fw-bold">Explore Nature Responsibly</h1>
-            <p class="lead">Discover eco-friendly destinations across the region</p>
-            <a href="destinations.html" class="btn btn-light btn-lg">View Destinations</a>
+            <p class="lead">Discover eco-friendly destinations across Kenya</p>
+            <a href="destinations.html" class="btn btn-success btn-lg me-2">View Destinations</a>
+            <a href="itineraries.html" class="btn btn-outline-light btn-lg">Plan a Trip</a>
           </div>
         </div>
       </div>
       <div class="carousel-item">
         <div class="carousel-slide slide-mountain d-flex align-items-center justify-content-center text-center text-white">
-          <div>
+          <div class="carousel-text-box">
             <h1 class="display-4 fw-bold">Stay Green, Travel Far</h1>
             <p class="lead">Browse our handpicked eco-accommodations</p>
-            <a href="stays.html" class="btn btn-light btn-lg">View Stays</a>
+            <a href="stays.html" class="btn btn-success btn-lg me-2">View Stays</a>
+            <a href="about.html" class="btn btn-outline-light btn-lg">Our Mission</a>
           </div>
         </div>
       </div>
       <div class="carousel-item">
         <div class="carousel-slide slide-river d-flex align-items-center justify-content-center text-center text-white">
-          <div>
+          <div class="carousel-text-box">
             <h1 class="display-4 fw-bold">Plan Your Perfect Trip</h1>
             <p class="lead">Ready-made itineraries for every kind of traveler</p>
-            <a href="itineraries.html" class="btn btn-light btn-lg">View Itineraries</a>
+            <a href="itineraries.html" class="btn btn-success btn-lg me-2">View Itineraries</a>
+            <a href="contact.html" class="btn btn-outline-light btn-lg">Book Now</a>
           </div>
         </div>
       </div>
@@ -83,11 +86,35 @@
     </button>
   </div>
 
-  <!-- INTRO SECTION -->
+  <!-- STATS COUNTER SECTION -->
+  <section class="py-5 stats-section text-white text-center">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-3">
+          <h2 class="display-5 fw-bold text-warning">50+</h2>
+          <p class="mb-0 fs-5">Eco Destinations</p>
+        </div>
+        <div class="col-md-3">
+          <h2 class="display-5 fw-bold text-warning">30+</h2>
+          <p class="mb-0 fs-5">Green Stays</p>
+        </div>
+        <div class="col-md-3">
+          <h2 class="display-5 fw-bold text-warning">10+</h2>
+          <p class="mb-0 fs-5">Travel Itineraries</p>
+        </div>
+        <div class="col-md-3">
+          <h2 class="display-5 fw-bold text-warning">5,000+</h2>
+          <p class="mb-0 fs-5">Happy Travelers</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WELCOME SECTION -->
   <section class="py-5 bg-light fade-in">
     <div class="container text-center">
       <h2 class="mb-3">Welcome to GreenTrails</h2>
-      <p class="lead mb-0">
+      <p class="lead mb-0 mx-auto" style="max-width: 700px;">
         GreenTrails connects travelers with sustainable destinations, eco-conscious stays, and
         local experiences that protect the places we love to visit. Every trip you plan here
         supports local communities and responsible tourism.
@@ -95,43 +122,129 @@
     </div>
   </section>
 
-  <!-- QUICK ACCESS CARDS -->
+  <!-- FEATURED DESTINATIONS -->
   <section class="py-5 fade-in">
     <div class="container">
-      <h2 class="text-center mb-4">Start Exploring</h2>
+      <h2 class="text-center mb-2">Featured Destinations</h2>
+      <p class="text-center text-muted mb-4">Some of Kenya's most breathtaking eco-friendly spots</p>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow border-0 destination-feature-card">
+            <img src="images/hero-savanna.jpg" class="card-img-top" alt="Masai Mara savanna landscape" style="height:220px; object-fit:cover;">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Masai Mara</h5>
+              <p class="card-text text-muted">Home to the Great Migration and community-run conservancies that support Maasai landowners.</p>
+              <a href="destinations.html" class="btn btn-success btn-sm">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow border-0 destination-feature-card">
+            <img src="images/mount-kenya.jpg" class="card-img-top" alt="Mount Kenya peak" style="height:220px; object-fit:cover;">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Mount Kenya</h5>
+              <p class="card-text text-muted">A UNESCO World Heritage Site with guided treks and alpine lakes managed by local communities.</p>
+              <a href="destinations.html" class="btn btn-success btn-sm">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow border-0 destination-feature-card">
+            <img src="images/watamu-marine.jpg" class="card-img-top" alt="Watamu marine park" style="height:220px; object-fit:cover;">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Watamu Marine Park</h5>
+              <p class="card-text text-muted">A protected coral reef paradise with sea turtle conservation tours and snorkeling cooperatives.</p>
+              <a href="destinations.html" class="btn btn-success btn-sm">Explore</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="destinations.html" class="btn btn-outline-success btn-lg">View All Destinations</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK ACCESS CARDS -->
+  <section class="py-5 bg-light fade-in">
+    <div class="container">
+      <h2 class="text-center mb-2">Start Exploring</h2>
+      <p class="text-center text-muted mb-4">Everything you need for your eco-adventure</p>
       <div class="row g-4">
         <div class="col-md-3">
-          <div class="card text-center p-3 h-100 shadow-sm">
+          <div class="card text-center p-3 h-100 shadow-sm border-0 quick-card">
+            <div class="quick-icon bg-success text-white rounded-circle mx-auto mb-3">D</div>
             <h5 class="fw-bold">Destinations</h5>
             <p>Browse eco-friendly travel spots near you.</p>
-        
-<a href="destinations.html" class="btn btn-sm btn-success" data-bs-toggle="tooltip" title="Browse eco-friendly destinations in Kenya">Explore</a>
+            <a href="destinations.html" class="btn btn-sm btn-success" data-bs-toggle="tooltip" title="Browse eco-friendly destinations in Kenya">Explore</a>
           </div>
         </div>
         <div class="col-md-3">
-          <div class="card text-center p-3 h-100 shadow-sm">
+          <div class="card text-center p-3 h-100 shadow-sm border-0 quick-card">
+            <div class="quick-icon bg-success text-white rounded-circle mx-auto mb-3">S</div>
             <h5 class="fw-bold">Eco-Stays</h5>
             <p>Find green hotels and campsites.</p>
-          <a href="stays.html" class="btn btn-sm btn-success" data-bs-toggle="tooltip" title="Find green hotels, lodges and campsites">Explore</a>
-
+            <a href="stays.html" class="btn btn-sm btn-success" data-bs-toggle="tooltip" title="Find green hotels, lodges and campsites">Explore</a>
           </div>
         </div>
         <div class="col-md-3">
-          <div class="card text-center p-3 h-100 shadow-sm">
+          <div class="card text-center p-3 h-100 shadow-sm border-0 quick-card">
+            <div class="quick-icon bg-success text-white rounded-circle mx-auto mb-3">I</div>
             <h5 class="fw-bold">Itineraries</h5>
             <p>Ready-made day-by-day travel plans.</p>
-           <a href="itineraries.html" class="btn btn-sm btn-success" data-bs-toggle="tooltip" title="View ready-made day-by-day travel plans">Explore</a>
-
+            <a href="itineraries.html" class="btn btn-sm btn-success" data-bs-toggle="tooltip" title="View ready-made day-by-day travel plans">Explore</a>
           </div>
         </div>
         <div class="col-md-3">
-          <div class="card text-center p-3 h-100 shadow-sm">
+          <div class="card text-center p-3 h-100 shadow-sm border-0 quick-card">
+            <div class="quick-icon bg-success text-white rounded-circle mx-auto mb-3">B</div>
             <h5 class="fw-bold">Travel Blog</h5>
             <p>Tips on sustainable packing and wildlife.</p>
             <a href="blog.html" class="btn btn-sm btn-success" data-bs-toggle="tooltip" title="Read tips on sustainable travel and wildlife">Explore</a>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="py-5 testimonials-section">
+    <div class="container">
+      <h2 class="text-center mb-2">What Travelers Say</h2>
+      <p class="text-center text-muted mb-4">Real experiences from real eco-travelers</p>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card p-4 h-100 shadow-sm border-0 testimonial-card">
+            <p class="mb-3">"GreenTrails made planning our Masai Mara trip so easy. Knowing our stay supported local Maasai families made the experience even more meaningful."</p>
+            <p class="fw-bold mb-0">Sarah K.</p>
+            <p class="text-muted small">Nairobi, Kenya</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 h-100 shadow-sm border-0 testimonial-card">
+            <p class="mb-3">"We found Rondo Retreat through GreenTrails and it was the most peaceful stay we have ever had. The forest sounds at night were incredible."</p>
+            <p class="fw-bold mb-0">James O.</p>
+            <p class="text-muted small">Mombasa, Kenya</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 h-100 shadow-sm border-0 testimonial-card">
+            <p class="mb-3">"The Watamu itinerary was perfect. Swimming in the marine park and then walking the mangrove boardwalk the next day felt like a complete coastal experience."</p>
+            <p class="fw-bold mb-0">Aisha M.</p>
+            <p class="text-muted small">Kisumu, Kenya</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION -->
+  <section class="py-5 cta-section text-white text-center">
+    <div class="container">
+      <h2 class="fw-bold mb-3">Ready to Travel Responsibly?</h2>
+      <p class="lead mb-4">Book your eco-friendly Kenya adventure today and make a difference with every step.</p>
+      <a href="contact.html" class="btn btn-light btn-lg me-2">Book Now</a>
+      <a href="destinations.html" class="btn btn-outline-light btn-lg">Browse Destinations</a>
     </div>
   </section>
 
@@ -150,6 +263,7 @@
   </footer>
 
   <button id="scrollTopBtn" class="btn btn-success" title="Back to top" aria-label="Scroll back to top">Top</button>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
