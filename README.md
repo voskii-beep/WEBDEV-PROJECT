@@ -144,6 +144,6 @@ All 9 pages completed and deployed. The site features real Kenyan eco-tourism de
 
 ## Author
 
-- Name:Kevin Omuka
+- Name:Kevin omuka
 - Student ID:221358
 - Submitted:28 June 2026
